@@ -20,8 +20,12 @@ import javax.swing.JOptionPane;
  *  Winter 2021
  */
 public class Time {
-    public static void main(String[] args) {
-        try {
+	public static void main(String[] args) {
+		 int totalSeconds = getTotalSeconds("10:10:10");
+		 System.out.println("**GH Total Seconds = "+totalSeconds);
+		
+
+        /*try {
             String time = JOptionPane.showInputDialog(null,
                     "Enter a time in the format hh:mm:ss:SS", "Enter Time",
                     JOptionPane.QUESTION_MESSAGE);
@@ -40,7 +44,11 @@ public class Time {
                     "Invalid Time", JOptionPane.ERROR_MESSAGE);
         } catch (Exception e) {
             System.out.println("An unexpected Exception occurred");
-        }
+        }*/
+    	
+    		//int totalSeconds = getTotalSeconds("10:10:10");
+    	//	System.out.println("Total Seconds = "+totalSeconds);
+
     }
 
     public static int getTotalSeconds(String time) throws NumberFormatException, StringIndexOutOfBoundsException {
